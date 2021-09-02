@@ -1,0 +1,213 @@
+@font-face {
+        font-family: 'RobotoSlabBold';
+        src: url('../fonts/RobotoSlab/RobotoSlab-Bold.ttf') format('truetype');
+}
+@font-face {
+        font-family: 'RudaBlack';
+        src: url('../fonts/Ruda/Ruda-Black.ttf') format('truetype');
+}
+
+html {
+    font-size: 16px;
+    /*max-width: 100%;*/
+    background-color: hsl(38, 28%, 82%);
+    border: 4px solid hsl(226, 47%, 29%);
+    border-top: 0;
+}
+body {
+    width: 100%;
+    margin: auto;
+}
+/*css for header*/
+header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: Black;
+    background-color: hsl(38, 28%, 82%);
+    /*border-left: 4px solid hsl(226, 47%, 29%);
+    border-right: 4px solid hsl(226, 47%, 29%);*/
+    font-family: 'RudaBlack';
+    font-size: 1.5rem;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 4px;
+    right: 4px;
+    z-index: 2;
+}
+#logo {
+    width: 213px;`
+    height: 45px;
+    margin-left: 20px;
+    background-image: url(../images/logo_cz_b.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button {
+    margin-right: 20px;
+    width: 120px;
+    height: 46px;
+    background-color: hsl(226, 47%, 29%);
+    border: 1px solid hsl(206, 4%, 59%);
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px grey;
+    text-align: center;
+}
+.button a{
+    color: hsl(222, 33%, 95%);
+    text-decoration: none;
+    line-height: 46px;
+}
+.button a:active{
+    color: hsl(226, 47%, 29%);
+}
+.button:hover {
+    cursor: pointer;
+}
+.button:active {
+    /*margin-top: 25px;*/
+    background-color: hsl(222, 33%, 95%);
+    box-shadow: 0px 0px;
+}
+
+/*css for main image*/
+
+main {
+    margin-top: 64px;
+}
+
+#main_image {
+    position: relative;
+    padding-top: 66%;
+    background-image: url(../images/main.jpg);
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#main_image_info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 24%;
+    color: hsl(222, 33%, 95%);
+    font-family: 'RobotoSlabBold';
+    background-color: hsl(226, 47%, 29%);
+}
+/*USŁUGI section*/
+#services {
+    margin-top: 13px;
+}
+.section_title {
+    font-family: 'RudaBlack';
+    font-size: 1.5rem;
+    color: hsl(226, 47%, 29%);
+    margin-left: 20px;
+    margin-bottom: 13px;
+}
+
+.service_card {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 47px 1fr;
+    height: 47px;
+    margin: auto;
+    margin-bottom: 13px;
+    background-color: hsl(226, 47%, 29%);
+    font-family: 'RobotoSlabBold';
+    color: hsl(222, 33%, 95%);
+    text-align: center;
+}
+
+.service_card div {
+    margin: 4px;
+    background-image: url(../images/lightbulb.png);
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.service_card span {
+    line-height: 47px;
+    font-family: 'RobotoSlabBold';
+    color: hsl(222, 33%, 95%);
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* REALIZACJE section*/
+
+#implementations {
+    margin-top: 13px;
+}
+.implementation_card {
+    width: 90%;
+    margin: auto;
+    padding-top: 54%;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(226, 47%, 29%);
+}
+
+.impl1 {
+    background-image: url(../images/sadIlawa.jpg);
+}
+
+.impl2 {
+    background-image: url(../images/petroBaltic.png);
+}
+
+.impl3 {
+    background-image: url(../images/tubadzin.jpg);
+}
+
+.impl4 {
+    background-image: url(../images/kaufland.jpg);
+}
+
+.implementation_card div {
+    width: 100%;
+    margin: auto;
+    background-color: hsl(226, 47%, 29%);
+    line-height: 38px;
+    margin-bottom: 20px;
+    font-family: 'RobotoSlabBold';
+    font-size: 1.125rem;
+    color: hsl(222, 33%, 95%);
+    text-align: left;
+    vertical-align: middle;
+}
+.title {
+    font-size: 1.125rem;
+    padding-left: 20px;
+}
+
+.desc {
+    font-size: 0.875rem;
+    padding-left: 20px;
+}
+
+/*stopka section*/
+footer {
+    padding-top: 13px;
+    background-color: hsl(226, 47%, 29%);
+    line-height: 24px;
+    font-family: 'RobotoSlabBold';
+    color: hsl(222, 33%, 95%);
+    text-align: left;
+    vertical-align: middle;
+}
+.title2 {
+    font-size: 1.5rem;
+    margin-top: 13px;
+}
+
+footer p {
+    margin-left: 20px;
+}

@@ -105,6 +105,7 @@ main {
     font-family: 'RobotoSlabBold';
     font-size: 2rem;
     text-align: center;
+    overflow: hidden;
     background-color: hsl(226, 47%, 29%);
 }
 /*USŁUGI section*/

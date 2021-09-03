@@ -9,18 +9,23 @@
 
 html {
     font-size: 16px;
-    /*max-width: 100%;*/
-    background-color: hsl(38, 28%, 82%);
-    border: 4px solid hsl(226, 47%, 29%);
+    max-width: 1024px;
+    /*background-color: hsl(38, 28%, 82%);*/
+    border: 4px solid hsl(38, 28%, 82%);
     border-top: 0;
+    background-color: hsl(226, 47%, 29%);
+    margin: auto;
 }
 body {
     width: 100%;
     margin: auto;
+    background-color: hsl(38, 28%, 82%);
 }
 /*css for header*/
 header {
     width: auto;
+    max-width: 1024px;
+    margin:auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +43,7 @@ header {
     z-index: 2;
 }
 #logo {
-    width: 213px;`
+    width: 213px;
     height: 45px;
     margin-left: 20px;
     background-image: url(../images/logo_cz_b.gif);
@@ -98,12 +103,15 @@ main {
     height: 24%;
     color: hsl(222, 33%, 95%);
     font-family: 'RobotoSlabBold';
+    font-size: 2rem;
+    text-align: center;
     background-color: hsl(226, 47%, 29%);
 }
 /*USŁUGI section*/
 #services {
     margin-top: 13px;
 }
+
 .section_title {
     font-family: 'RudaBlack';
     font-size: 1.5rem;
@@ -121,6 +129,7 @@ main {
     margin-bottom: 13px;
     background-color: hsl(226, 47%, 29%);
     font-family: 'RobotoSlabBold';
+    font-size: 1.5rem;
     color: hsl(222, 33%, 95%);
     text-align: center;
 }
@@ -156,7 +165,7 @@ main {
 }
 
 .impl1 {
-    background-image: url(../images/sadIlawa.jpg);
+    background-image: url(../images/sadIlawa.png);
 }
 
 .impl2 {
@@ -164,11 +173,11 @@ main {
 }
 
 .impl3 {
-    background-image: url(../images/tubadzin.jpg);
+    background-image: url(../images/tubadzin.png);
 }
 
 .impl4 {
-    background-image: url(../images/kaufland.jpg);
+    background-image: url(../images/kaufland.png);
 }
 
 .implementation_card div {
@@ -209,5 +218,5 @@ footer {
 }
 
 footer p {
-    margin-left: 20px;
+    padding-left: 5%;
 }
